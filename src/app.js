@@ -54,7 +54,7 @@ app.get('/weather', (req, res) => {
             if(error){
                 return res.send({error})
             }
-            // console.log(foreCast);
+            // console.log(foreCast); 
             res.send({
                 place: req.query.address,
                 weather: foreCast
