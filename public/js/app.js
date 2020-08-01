@@ -5,7 +5,7 @@ const search = document.querySelector('input')
 const p = document.getElementById('result')
 // p.te
 getForecast = (loc) =>{
-    fetch('http://localhost:3000/weather?address='+loc+'').then( response => response.json().then( data => {
+    fetch('/weather?address='+loc+'').then( response => response.json().then( data => {
         if(data.error){
             return p.textContent=data.error
         }
